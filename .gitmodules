@@ -1,0 +1,3 @@
+[submodule "github-drama"]
+	path = github-drama
+	url = git@github.com:nikolas/github-drama.git
