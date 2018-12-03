@@ -84,20 +84,20 @@ def dramanalyze(dramas):
                     {
                         comment.user.login: {
                             "user": comment.user,
-                            "reactions": [],
+                            #  "reactions": [],
                             "count": 1,
                         }
                     }
                 )
-                commenters[comment.user.login]['reactions'].append([
-                    reaction for reaction in comment.get_reactions()
-                ])
+                #  commenters[comment.user.login]['reactions'].append([
+                #      reaction for reaction in comment.get_reactions()
+                #  ])
             else:
                 logging.info(f"Found existing user {comment.user.login}")
                 commenters[comment.user.login]['count'] += 1
-                commenters[comment.user.login]['reactions'].append([
-                    reaction for reaction in comment.get_reactions()
-                ])
+                #  commenters[comment.user.login]['reactions'].append([
+                #      reaction for reaction in comment.get_reactions()
+                #  ])
     return commenters
 
 
