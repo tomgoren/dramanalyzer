@@ -98,7 +98,6 @@ def dramanalyze(dramas):
                 commenters[comment.user.login]['reactions'].append([
                     reaction for reaction in comment.get_reactions()
                 ])
-        break
     return commenters
 
 
